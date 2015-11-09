@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/getClient.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<title></title>
 </head>
 <body>
-<p><label for="nombre">Nombre: </label><input type="text" id="nombre" name="nombre"></p>
- 
-<table>
+<p id="nameBlock">
+	<label for="nombre">Buscar Nombre: </label>
+	<input type="text" id="nombre" name="nombre">
+	<div id="nameList"></div>	
+</p>
+<br>
 
-	<tr>
-	  <th><strong>Id</strong></th>
-	  <th><strong>Nombre</strong></th>
-	  <th><strong>Apellido</strong></th>
-	</tr>
+<div class="info">
 
-	 <tr>
-	   <td id="id"></td>
-	   <td id="nom"></td>		
-	   <td id="ape"></td>
-	 </tr>
+<form id="insert">
+	 <p id="infoName">Nombre: <br>
+	 	<input id="nameCliente" name="nameCliente" />
+	 </p>
+	 <p id="infoApellido">Apellido: <br>
+	 	<input id="apellidoCliente" name="apellidoCliente"/>
+	 </p>
+	 <p id="infoEmail">Mail: <br>
+	 	<input id="emailCliente" name="emailCliente"/>
+	 </p>
+	 <p id="infoDni">DNI: <br>
+	 	<input id="dniCliente" name="dniCliente"/>
+	 </p>
+	 <p id="infoTel">Telefono: <br>
+	 	<input id="telCliente" name="telCliente"/>
+	 </p>
+	 <p id="infoFecha">Fecha de Nacimiento: <br>
+	 	<input id="fechaCliente" name="fechaCliente"/>
+	 </p>
+	<p><button id="actualizar" >Actualizar</button></p>
+</form>
+</div>
+<h3 id="cartel"></h3>
 
-</table>
 
 
 </body>

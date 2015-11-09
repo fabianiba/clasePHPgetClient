@@ -1,0 +1,27 @@
+#nameList ul li {
+	list-style-type: none;
+	cursor: pointer;
+}
+#nameList ul li:hover {
+	background-color: grey;
+}
+
+#nameList {
+	border: 1px solid;
+	margin-left: 60px;
+	width: 200px;
+}
+#nameBlock{
+	margin-bottom: 0px;
+}
+#nameList ul {
+	padding: 5px;
+	margin: 0px;
+}
+
+.info{
+	border: 1px solid;
+	width: 30%;
+	padding-left: 2%;
+}
+
